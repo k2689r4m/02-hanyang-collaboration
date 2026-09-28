@@ -1,0 +1,36 @@
+$perPage = 3;
+
+        if ($request->has('type') && $request->has('content')) {
+            $validator = Validator::make($request->all(), [
+                'type' => ['required', 'string', 'in:name,email'],
+                'content' => ['nullable', 'string', 'min:2']
+            ]);
+
+            if (!$validator->fails()) {
+                $type = $request['type'];
+                $content = $request['content'];
+                $classLists = ClassList::where('classObjectId', $classObjectId)->with(['withUser' => function ($query) use($type, $content) {
+                    $query->where($type, 'like', '%'.$content.'%');
+                }])->get()->whereNotNull('withUser');
+
+                $paginate = new LengthAwarePaginator(
+                    $classLists->forPage(Paginator::resolveCurrentPage(), $perPage),
+                    $classLists->count(),
+                    $perPage,
+                    Paginator::resolveCurrentPage(),
+                    ['path' => Paginator::resolveCurrentPath()]
+                );
+
+                return view('./lecture/lecture_detail_member',['classObjectId' => $classObjectId, 'classLists' => $paginate] );
+            }
+            else {
+                return redirect()->back()->withErrors($validator->errors());
+            }
+        }
+
+        $classObject = ClassObject::find($classObjectId);
+        if (!$classObject) {
+            return redirect()->back();
+        }
+
+        $classLists = $classObject->withClassLists()->paginate($perPage);

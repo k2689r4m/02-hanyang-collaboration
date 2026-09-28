@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="69.747px" height="50.082px" viewBox="0 0 69.747 50.082" enable-background="new 0 0 69.747 50.082" xml:space="preserve">
+<g>
+	<defs>
+		<rect id="SVGID_1_" width="69.747" height="50.082"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  overflow="visible"/>
+	</clipPath>
+	
+		<polygon clip-path="url(#SVGID_2_)" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="bevel" stroke-miterlimit="10" points="
+		36.489,0.876 3.549,18.948 36.489,37.02 69.264,18.948 	"/>
+	
+		<polygon clip-path="url(#SVGID_2_)" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="bevel" stroke-miterlimit="10" points="
+		3.549,26.302 0,38.182 7.225,38.182 	"/>
+	
+		<polygon clip-path="url(#SVGID_2_)" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="bevel" stroke-miterlimit="10" points="
+		3.549,27.185 3.549,18.657 36.488,18.657 3.549,18.657 	"/>
+	
+		<path clip-path="url(#SVGID_2_)" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="bevel" stroke-miterlimit="10" d="
+		M55.194,26.797v18.177c0,0-8.323,4.108-18.705,4.108c-10.382,0-18.87-4.108-18.87-4.108V26.797"/>
+</g>
+</svg>
